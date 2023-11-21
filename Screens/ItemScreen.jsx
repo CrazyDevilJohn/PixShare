@@ -11,6 +11,7 @@ import {
   ToastAndroid,
   Platform,
   SafeAreaView,
+  StatusBar,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { BlurView } from "expo-blur";
@@ -23,6 +24,12 @@ const ItemScreen = ({ route }) => {
   const [item, setItem] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
   const [isDownloading, setIsDownloading] = React.useState(false);
+
+  React.useEffect(() => {
+    StatusBar.setBackgroundColor("#ffffff00");
+    StatusBar.setTranslucent(true);
+  }, []);
+
   React.useEffect(() => {
     setIsLoading(true);
     getItemById(id)

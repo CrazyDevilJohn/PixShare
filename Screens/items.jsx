@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   ScrollView,
   SafeAreaView,
+  StatusBar,
 } from "react-native";
 import React from "react";
 import { getCategoryItems } from "../sanity";
@@ -15,6 +16,7 @@ const Items = ({ route }) => {
   const id = route?.params?.param;
   const [items, setItems] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
+
   React.useEffect(() => {
     setIsLoading(true);
     getCategoryItems(id)
@@ -26,6 +28,7 @@ const Items = ({ route }) => {
   }, []);
   return (
     <View className="flex-1 items-center justify-center bg-[#04020d] relative">
+      <StatusBar backgroundColor={"#04020d"} barStyle={"light-content"} />
       {isLoading ? (
         <ActivityIndicator color={"#ff0000"} size={"large"} />
       ) : (

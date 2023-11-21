@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
+  StatusBar,
 } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 import MasonaryLayout from "./MasonaryLayout";
@@ -21,6 +22,7 @@ function HomeScreen() {
 
   return (
     <View className="flex-1 items-center justify-center bg-[#04020d] relative">
+      <StatusBar backgroundColor={"#04020d"} barStyle={"light-content"} />
       <SafeAreaView className="flex w-full flex-1 items-center justify-start gap-4 bg-[#04020d]">
         <View className="w-full px-6 flex-row items-center justify-between">
           <Text className="text-2xl text-gray-50 font-semibold">

@@ -13,11 +13,6 @@ import { StatusBar } from "react-native";
 const Stack = createStackNavigator();
 
 const App = (props) => {
-  useEffect(() => {
-    StatusBar.setBackgroundColor("#ffffff00");
-    StatusBar.setTranslucent(true);
-  }, []);
-
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>

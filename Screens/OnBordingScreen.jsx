@@ -1,9 +1,14 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
 import React from "react";
 import { BG } from "../assets";
 import { useNavigation } from "@react-navigation/native";
 
 export default function OnBordingScreen() {
+  React.useEffect(() => {
+    StatusBar.setBackgroundColor("#ffffff00");
+    StatusBar.setTranslucent(true);
+  }, []);
+
   const navigation = useNavigation();
   return (
     <View className="flex-1 items-center justify-center bg-[#04020d] relative">
