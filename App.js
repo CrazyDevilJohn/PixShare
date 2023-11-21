@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 
 const App = (props) => {
   useEffect(() => {
-    StatusBar.setBackgroundColor("ffffff00");
+    StatusBar.setBackgroundColor("#ffffff00");
     StatusBar.setTranslucent(true);
   }, []);
 
