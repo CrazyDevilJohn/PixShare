@@ -1,5 +1,5 @@
 > BeautyBland : Your ultimate beauty app
-> ![Thumnail of the project](./snap.png)
+> ![Thumnail of the project](./Thumb-image-sharing-app-react-native-mar-23-updated.png)
 
 Follow us for more projects like this [Check on our website](https://codewithvetri.web.app)
 
